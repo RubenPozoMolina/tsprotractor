@@ -8,13 +8,12 @@
 //
 // To run this example, run `protractor conf.js`.
 exports.config = {
-  framework: 'jasmine',
+  framework: 'mocha',
   capabilities: {
     browserName: 'chrome'
   },
   specs: [
-    'spec.js',
-    'specPageObjects.js'
+    'spec.js'
   ],
   directConnect: true,
 
