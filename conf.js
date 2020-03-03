@@ -8,13 +8,16 @@
 //
 // To run this example, run `protractor conf.js`.
 exports.config = {
-  framework: 'mocha',
+  framework: "mocha",
+  allScriptsTimeout: 80000,
+  getPageTimeout: 40000,
   capabilities: {
-    browserName: 'chrome'
+    browserName: "chrome"
   },
-  specs: [
-    'spec.js'
-  ],
+  mochaOpts: {
+    enableTimeouts: false
+  },
+  specs: ["spec.js"],
   directConnect: true,
 
   // You could set no globals to true to avoid jQuery '$' and protractor '$'
